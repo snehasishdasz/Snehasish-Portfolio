@@ -3,7 +3,15 @@ import "./Navbar.css"
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <>
+        <nav>
+            <div className="tophead">
+                <h1>
+                    HII
+                </h1>
+            </div>
+        </nav>
+    </>
   )
 }
 

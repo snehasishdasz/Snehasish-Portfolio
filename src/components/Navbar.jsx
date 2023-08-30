@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import "./Navbar.css"
 import { Link } from 'react-scroll';
+// import {FaArrowCircleUp} from "react-icons/fa6"
+import { FaArrowUp } from 'react-icons/fa6';
 
 const Navbar = () => {
   const [navbarStyle,setNavbarStyle]= useState({});
@@ -10,6 +12,32 @@ const Navbar = () => {
   const toggleMenu = () =>{
     setOpen(!open);
   }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight
+      - document.documentElement.clientHeight;
+      const scrollPercentage = (scrollTop / scrollHeight) * 100;
+
+      if (scrollPercentage >= 2) {
+        setScroll(true);
+
+        setNavbarStyle({
+          backgroundColor: 'rgba(0, 0, 0, 0.2)',
+        });
+      } else {
+        setNavbarStyle({});
+        setScroll(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   
   return (
     <>
@@ -48,7 +76,7 @@ const Navbar = () => {
         </nav>
         <div className={`scroll-to-top ${scroll ? 'scroll-true' : ''}`}>
           <Link spy smooth offset={50} duration={1000} to='home'>
-          <i className="fa-solid fa-arrow-up" />
+          <FaArrowUp/>
           </Link>
         </div>
     </>

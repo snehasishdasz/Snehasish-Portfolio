@@ -5,13 +5,12 @@
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    flex: 0 0 calc(33.3333% - 20px); /* Adjust card width and spacing as needed */
+  margin-bottom: 20px; /* Adjust the space between cards */
+
+    
   }
-  .github-img{
-    height: 30px;
-    width: 30px;
-    display: block;
-    cursor: pointer;
-  }
+  
   .project-card img {
     transition: all 0.3s;
     width: 100%;
@@ -27,6 +26,33 @@
   
   .project-card p {
     line-height: 1.5rem;
+  }
+  /* Add these styles to your Project.css file */
+
+.project-card {
+    position: relative; /* Ensure relative positioning for the container */
+  }
+  
+  .github-link {
+    position: absolute; /* Position the link absolutely within the container */
+    top: 10px; /* Adjust this value to control the vertical positioning */
+    right: 10px; /* Adjust this value to control the horizontal positioning */
+    z-index: 1; /* Ensure the link is above the image */
+    animation: blink2 0.5s infinite alternate;
+  }
+  
+  .github-icon {
+    /* You can add additional styles for the icon, e.g., font-size, color */
+    font-size: 24px; /* Adjust the size of the icon */
+    
+  }
+  @keyframes blink2 {
+    0% {
+      opacity: 0; /* Start with zero opacity */
+    }
+    100% {
+      opacity: 1; /* End with full opacity */
+    }
   }
   
   .card-description {
@@ -96,9 +122,15 @@
   }
   
   .projects-container {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    position: relative; */
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+    
   }
   
   .projects-title {
@@ -142,4 +174,32 @@
     }
   }
   
+  .more-projects-button {
+    position: absolute;
+    bottom: -38px; /* Adjust the vertical positioning as needed */
+    right: 14px; /* Adjust the horizontal positioning as needed */
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2; /* Ensure the button is above other content */
+  }
   
+  /* Add a media query for responsiveness */
+  @media (max-width: 768px) {
+    .projects-container {
+      flex-direction: column;
+    }
+  
+    .project-card {
+      flex: 0 0 100%;
+    }
+  
+    .more-projects-button {
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+  }

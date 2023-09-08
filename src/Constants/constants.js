@@ -1,8 +1,13 @@
+import img1 from "../projects/Video-Vault.png"
+import img2 from "../projects/मौसम-Weather.png"
+import img3 from "../projects/Amigo.png"
+
+
 const projects = [
     {
       "index": 1,
       "name": "Video Streaming Website",
-      "imgsrc": "../projects/Video-Vault.png",
+      "imgsrc": img1,
       "descr": " A convenient and comprehensive platform that helps users to stream any kind of video and user can save their video on this website",
       "github":"https://github.com/snehasishdasz/Video-Vault",
       "tech1": "#html ",
@@ -12,9 +17,9 @@ const projects = [
     {
       "index": 2,
       "name": "Weather Application",
-      "imgsrc": "../projects/मौसम-Weather.png",
+      "imgsrc": img2,
       "descr": "A dynamic and interactive weather application that show different locations weather. ", 
-      "github":"https://github.com/snehasishdasz/mausam-weather-app",
+      "github":"https://github.com/snehasishdasz/Video-Vault",
       "tech1": "#nextjs",
       "tech2": "#scss",
       "tech3": "#firebase",
@@ -22,7 +27,7 @@ const projects = [
     {
       "index": 3,
       "name": "Flight Portal System",
-      "imgsrc": "../projects/Amigo.png",
+      "imgsrc": img3,
       "descr": "An online platform where user can see the flight timing and book their flight .", 
       "github":"https://github.com/snehasishdasz/flight-portal-system",
       "tech1": "#reactjs",

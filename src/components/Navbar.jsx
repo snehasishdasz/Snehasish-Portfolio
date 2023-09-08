@@ -52,17 +52,17 @@ const Navbar = () => {
             <ul className={`menu ${open ? 'open' : ''}`}>
             <li>
             <Link spy smooth offset={50} duration={500} onClick={toggleMenu} to="home">
-              home,
+              home
             </Link>
           </li>
           <li>
             <Link spy smooth offset={50} duration={500} onClick={toggleMenu} to="about">
-              about,
+              about
             </Link>
           </li>
           <li>
             <Link spy smooth offset={50} duration={500} onClick={toggleMenu} to="projects">
-              projects,
+              projects
             </Link>
           </li>
           <li>

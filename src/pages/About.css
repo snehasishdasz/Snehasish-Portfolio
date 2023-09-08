@@ -16,6 +16,13 @@
     margin-bottom: 10%;
   }
   
+  .titlee {
+    font-size: 5rem;
+    color: white;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    overflow: hidden;
+}
   .about-title {
     margin: 0;
   }
@@ -27,8 +34,10 @@
   }
   
   .aboutImageContainer {
+    height: 80% !important;
     width: 90% !important;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
   }
   .aboutImageContainer img {
     width: 100%;

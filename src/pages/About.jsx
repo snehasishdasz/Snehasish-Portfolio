@@ -18,12 +18,12 @@ import Terminal from '../assets/terminal.gif';
 const About = () => (
    <section className="about" id="about">
    <div className="about-me">
-      <h2 className="title about-title">aBOUT mE</h2>
+      <h2 className="titlee about-title">aBOUT mE</h2>
       <div className="aboutImageContainer">
       <img src={Terminal} alt="snehasish" className='hero-image' />
       </div>
       <button className="hire-me">
-        <a href="https://drive.google.com/file/d/1RIQlxcFspH89xvugEeEyvgSG_ABMX3rI/view?usp=drive_link" target="_blank" rel="noreferrer">
+        <a href="" target="_blank" rel="noreferrer">
           GET MY CV
         </a>
       </button>

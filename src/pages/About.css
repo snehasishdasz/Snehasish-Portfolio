@@ -142,7 +142,9 @@
       flex-direction: column;
       margin-bottom: 25%;
     }
-  
+   .titlee{
+    font-size: 3rem;
+   }
     .about-me {
       position: static;
     }

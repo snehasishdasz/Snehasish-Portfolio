@@ -3,9 +3,12 @@ import ProjectCSS from './Project.css';
 import { projects } from '../Constants/constants';
 import { BsArrowUpRightCircle, BsGithub } from 'react-icons/bs';
 // import { NavLink } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 
 const Project = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="projects" id="projects">
       <h1 className="title projects-title">featuRed pRojecTs</h1>
@@ -39,7 +42,9 @@ const Project = () => {
           );
         })}
         
-        <button className="more-projects-button">More Projects</button>
+    
+        <button className="more-projects-button" onClick={()=>navigate("/moreprojects")}>More Projects</button>
+
 
         
       </div>

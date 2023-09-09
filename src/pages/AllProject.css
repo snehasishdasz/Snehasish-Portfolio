@@ -1,0 +1,231 @@
+
+.project-card {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    break-inside: avoid;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    flex: 0 0 calc(33.3333% - 20px); /* Adjust card width and spacing as needed */
+  margin-bottom: 20px; /* Adjust the space between cards */
+  }
+  
+  .titlle{
+    font-size: 5rem;
+    color: white;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    overflow: hidden;
+  }
+  .project-card img {
+    transition: all 0.3s;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .project-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.3);
+  }
+  
+  .project-card p {
+    line-height: 1.5rem;
+  }
+  /* Add these styles to your Project.css file */
+
+.project-card {
+    position: relative; /* Ensure relative positioning for the container */
+  }
+  
+  .github-link {
+    position: absolute; /* Position the link absolutely within the container */
+    top: 10px; /* Adjust this value to control the vertical positioning */
+    right: 10px; /* Adjust this value to control the horizontal positioning */
+    z-index: 1; /* Ensure the link is above the image */
+    animation: blink2 0.5s infinite alternate;
+  }
+  
+  .github-icon {
+    /* You can add additional styles for the icon, e.g., font-size, color */
+    font-size: 24px; /* Adjust the size of the icon */
+    
+  }
+  @keyframes blink2 {
+    0% {
+      opacity: 0; /* Start with zero opacity */
+    }
+    100% {
+      opacity: 1; /* End with full opacity */
+    }
+  }
+  
+  .card-description {
+    padding: 2% 4% 5% 4%;
+  }
+  
+  .stacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  
+  .tech-stack {
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    color: white;
+    border: 0;
+    cursor: none;
+  }
+  
+  .tech-stack:hover {
+    border: none;
+    background-color: #cb450c;
+    color: white;
+  }
+  
+  .arrow {
+    position: absolute;
+    rotate: -45deg;
+    font-size: 2.7rem;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    color: white;
+  }
+  
+  .project-card:hover .arrow {
+    top: 2%;
+    left: 95.5%;
+    opacity: 0.7;
+    z-index: 55;
+  }
+  
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+    only screen and (min-resolution: 125dpi) {
+    .project-card p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* for mobile and tablet devices */
+  
+  @media only screen and (max-width: 768px) {
+    .tech-stack {
+      font-size: 0.8rem;
+    }
+  }
+  
+.projectss {
+    padding: 38px 10%;
+    margin-bottom: 10%;
+  }
+  
+  .projects-container {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    position: relative; */
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+    
+  }
+  
+  .projectss-title {
+    margin-top: 2rem !important;
+    text-align: center;
+  }
+  
+  .projects-para {
+    font-size: 1.5rem;
+    color: white;
+    margin: 2% 0 4rem 0;
+    font-family: 'Orbit', sans-serif;
+    text-align: justify;
+  }
+  
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+    only screen and (min-resolution: 125dpi) {
+    .projects-para {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .projects-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .projectss {
+      padding: 0 5%;
+      margin-bottom: 20%;
+    }
+  
+    .projects-para {
+      font-size: 1rem;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .projects-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .more-projects-button {
+    position: absolute;
+    bottom: -38px; /* Adjust the vertical positioning as needed */
+    right: 14px; /* Adjust the horizontal positioning as needed */
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2; /* Ensure the button is above other content */
+  }
+  
+  /* Add a media query for responsiveness */
+  @media (max-width: 768px) {
+    .projects-container {
+      flex-direction: column;
+    }
+  
+    .project-card {
+      flex: 0 0 100%;
+    }
+  
+    .more-projects-button {
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+  }
+  .filter-projs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Adjust the margin as needed */
+  }
+  
+  .filter-projs span {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 10px; /* Adjust the margin as needed */
+    border: 1px solid #ccc;
+    background: orange;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-projs span:hover {
+    background-color: #eee; /* Adjust the hover background color as desired */
+  }

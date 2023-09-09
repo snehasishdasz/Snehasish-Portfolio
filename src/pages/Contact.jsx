@@ -49,9 +49,6 @@ const Contact = () => (
         <span><a href="https://twitter.com/Snehasishdasz" target="_blank" rel="noreferrer">TWITTER</a></span>
       </div>
     </div>
-    <footer className="footer">
-        Created with ❤️ by Snehasish
-      </footer>
   </div>
 );
 

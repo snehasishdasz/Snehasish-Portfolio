@@ -10,7 +10,7 @@ const Hero = () => (
   <div className="hero" id="home">
     <div className="hero-overlay">
       <div className="description">
-        <h2 className="title">hELLO. i aM SNEHAISH</h2>
+        <h2 className="title">hELLO. i aM SNEHASISH</h2>
         <h3 className="tagline">Breaking keyboards and pushing pixels since 2020</h3>
         <p className="paragraph">I'm a passionate frontend developer who thrives on transforming innovative ideas into captivating on-screen realities. My keyboard is my greatest tool, enabling me to bring imagination to life through elegant code and dynamic designs. With a constant drive to create and implement, I find my true calling in crafting immersive digital experiences.</p>
         <div className="hero-btns">

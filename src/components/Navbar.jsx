@@ -44,7 +44,7 @@ const Navbar = () => {
         <nav style={navbarStyle} className={`navbar ${open ? 'nav-open' : ''} ${scroll ? 'scrolled' : ''}`}>
             <div className="tophead">
                 <h1>
-                    <Link className="name-logo" spy smooth offset={50} duration={500} to='home'>snehasish.</Link>
+                    <Link className="name-logo" spy smooth offset={50} duration={500} to='/'>snehasish.</Link>
                     <span className="blink" />
                 </h1>
                 <div className={`menu-btn ${open ? 'opened-btn' : ''}`} onClick={toggleMenu}></div>

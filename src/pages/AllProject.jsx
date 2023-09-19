@@ -59,9 +59,10 @@ const AllProject = () => {
                 <h3>{element.name}</h3>
                 <p>{element.descr}</p>
                 <div className="stacks">
-                  <button className='tech-stack'>{element.tech1}</button>
-                  <button className='tech-stack'>{element.tech2}</button>
-                  <button className='tech-stack'>{element.tech3}</button>
+                {element.techs.map((tech, index) => (
+                    <button className='tech-stack' key={index}>{tech}</button>
+                ))}
+                  
                 </div>
               </div>
             </div>

@@ -112,7 +112,7 @@ const About = () => (
       </div>
      
       
-      <h2 className="skill-title">Soft Skills</h2>
+      {/* <h2 className="skill-title">Soft Skills</h2>
       <div className="skills">
         <p className="soft-skill">Communication</p>
         <p className="soft-skill">Mentoring</p>
@@ -120,7 +120,7 @@ const About = () => (
         <p className="soft-skill">Problem Solving</p>
         <p className="soft-skill">Time Management</p>
         <p className="soft-skill">Decision Making</p>
-      </div>
+      </div> */}
     </div>
    </section>
 );

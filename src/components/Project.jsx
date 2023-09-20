@@ -24,8 +24,9 @@ const Project = () => {
                 <a href={element.github} target="_blank" rel="noreferrer" className="github-link">
                   <BsGithub className="github-icon"/>
                 </a>
+                
               )}
-              <a href={element.github}>
+              <a href={element.livelink} target="_blank">
               <img src={element.imgsrc} alt="codeimg" />
 
               </a>

@@ -51,9 +51,8 @@ const AllProject = () => {
                   <BsGithub className="github-icon"/>
                 </a>
               )}
-              <a href={element.github}>
-              <img src={element.imgsrc} alt="codeimg" />
-
+              <a href={element.livelink}>
+                    <img src={element.imgsrc} alt="codeimg" />
               </a>
               <div className="card-description">
                 <h3>{element.name}</h3>

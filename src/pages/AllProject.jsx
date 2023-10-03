@@ -51,7 +51,7 @@ const AllProject = () => {
                   <BsGithub className="github-icon"/>
                 </a>
               )}
-              <a href={element.livelink}>
+              <a href={element.livelink} target='_blank'>
                     <img src={element.imgsrc} alt="codeimg" />
               </a>
               <div className="card-description">

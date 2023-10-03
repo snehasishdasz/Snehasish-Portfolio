@@ -16,6 +16,7 @@ import ProfileCard from "../projects/profilecard.png"
 import Quizer from "../projects/Quizer.png"
 import TodoApp from "../projects/Todo-App.png"
 import Restaurant from "../projects/Restaurant.png"
+import Filmflix from "../projects/FilmFlix.png"
 
 
 
@@ -171,7 +172,7 @@ const projects = [
       imgsrc: Quizer,
       descr: "Developed a dynamic full-stack quiz application from scratch, featuring user authentication, real-time quiz creation, and score tracking. Utilized technologies such as React.js, Node.js, and MongoDB to create an engaging and interactive learning tool.", 
       github:"https://github.com/snehasishdasz/MERN-QUIZ-App",
-      "livelink":"",
+      "livelink":"https://github.com/snehasishdasz/MERN-QUIZ-App",
       techs: ["#reactjs", "#mongodb", "#nodeJS" , "#css"],
     },
     {
@@ -189,7 +190,7 @@ const projects = [
       imgsrc: Restaurant,
       descr: "Designed and implemented a food recipe web application using HTML, CSS, and Node.js, enabling users to contribute and browse culinary creations with detailed recipes and images. This project showcases my front-end design skills and proficiency in creating interactive platforms for food enthusiasts.", 
       github:"https://github.com/snehasishdasz/MeanMern-Preplabs/tree/master/Assignment/Day-4Assignment",
-      "livelink":"",
+      "livelink":"https://github.com/snehasishdasz/MeanMern-Preplabs/tree/master/Assignment/Day-4Assignment",
       techs: ["#html", "#css","#nodeJS"],
     },
     {
@@ -219,6 +220,16 @@ const projects = [
       "livelink":"https://flight-portal.vercel.app/",
       techs: ["#html", "#css","#javascript"],
     },
+    {
+      index: 19,
+      name: "Movie Adding Website",
+      imgsrc: Filmflix,
+      descr: "Explore, upload, and rate movies on our dynamic React website, seamlessly integrated with Firebase for data storage. Engage with a passionate movie community, contribute your reviews, and witness how user feedback continually shapes and enhances our unique movie rating system.", 
+      github:"https://github.com/snehasishdasz/filmflix",
+      "livelink":"https://filmmflix.vercel.app/",
+      techs: ["#reactjs", "#tailwindcss","#firebase"],
+    },
+    
   ]
   
   export {  projects, allprojects };

@@ -17,12 +17,24 @@ import Quizer from "../projects/Quizer.png"
 import TodoApp from "../projects/Todo-App.png"
 import Restaurant from "../projects/Restaurant.png"
 import Filmflix from "../projects/FilmFlix.png"
-
+import cloudcastle1 from "../projects/cloudcastle1.png"
+import cloudcastle2 from "../projects/cloudcastle2.png"
 
 
 const projects = [
+  {
+    "index": 1,
+    "name": "Cloud Castle",
+    "imgsrc": cloudcastle2,
+    "descr": "CloudCastle is a Next.js-based cloud collaboration platform, developed for user-friendly file storage using Next.js and Firebase. It features seamless Gmail-based login, efficient user authentication, and easy creation and management of folders and subfolders. With Firebase storage ensuring reliable file storage, the platform prioritizes an intuitive UI design for an enhanced user experience. By leveraging Next.js authentication and Firebase storage, CloudCastle delivers an efficient, secure, and streamlined solution for file management.", 
+    "github":"https://github.com/snehasishdasz/cloud-file-manager",
+    "livelink":"https://cloud-file-manager-two.vercel.app/",
+    "tech1": "#nextjs",
+    "tech2": "#css",
+    "tech3": "#firebase",
+  },
     {
-      "index": 1,
+      "index": 2,
       "name": "Video Streaming Website",
       "imgsrc": Videovault,
       "descr": "Crafted a dynamic React website, offering users the ability to register accounts, upload and manage their favorite videos, and access a library of sample content. Utilized React, Firebase for authentication and storage, delivering a user-friendly platform for personalized video curation and exploration.",
@@ -33,23 +45,12 @@ const projects = [
       "tech3": "#firebase", 
     },
     {
-      "index": 2,
+      "index": 3,
       "name": "Weather Application",
       "imgsrc": Weather,
       "descr": "The Weather Application React project is a responsive and intuitive web application that provides real-time weather information for any location. Users can easily check current conditions, forecasts, and more, making it a valuable tool for staying informed about weather conditions.", 
       "github":"https://github.com/snehasishdasz/mausam-weather-app",
       "livelink":"https://mausamm.vercel.app/",
-      "tech1": "#reactjs",
-      "tech2": "#css",
-      "tech3": "#firebase",
-    },
-    {
-      "index": 3,
-      "name": "Flight Portal System",
-      "imgsrc": Amigo,
-      "descr": "Developed a Flight Portal System using HTML, CSS, and JavaScript, offering users the ability to browse available flights and seamlessly book tickets. This project underscores my expertise in front-end web development and creating user-friendly interfaces for travel-related applications.", 
-      "github":"https://github.com/snehasishdasz/flight-portal-system",
-      "livelink":"https://flight-portal.vercel.app/",
       "tech1": "#reactjs",
       "tech2": "#css",
       "tech3": "#firebase",
@@ -228,6 +229,15 @@ const projects = [
       github:"https://github.com/snehasishdasz/filmflix",
       "livelink":"https://filmmflix.vercel.app/",
       techs: ["#reactjs", "#tailwindcss","#firebase"],
+    },
+    {
+      "index": 20,
+      "name": "Cloud Castle",
+      "imgsrc": cloudcastle2,
+      "descr": "CloudCastle is a Next.js-based cloud collaboration platform, developed for user-friendly file storage using Next.js and Firebase. It features seamless Gmail-based login, efficient user authentication, and easy creation and management of folders and subfolders. With Firebase storage ensuring reliable file storage, the platform prioritizes an intuitive UI design for an enhanced user experience. By leveraging Next.js authentication and Firebase storage, CloudCastle delivers an efficient, secure, and streamlined solution for file management.", 
+      "github":"https://github.com/snehasishdasz/cloud-file-manager",
+      "livelink":"https://cloud-file-manager-two.vercel.app/",
+      techs: ["#nextjs", "#css","#firebase"],
     },
     
   ]
